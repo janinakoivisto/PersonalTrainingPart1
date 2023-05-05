@@ -13,7 +13,14 @@ const TrainingList = () => {
         fetch('https://traineeapp.azurewebsites.net/gettrainings').then((response) => response.json()).then((data) => {
             const trainings = data.map((item) => ({
                 id: item.id,
-                date: new Date(item.date).toLocaleDateString() + ' ' + new Date(item.date).toLocaleTimeString(),
+                date: new Date(item.date).toLocaleDateString('en-GB', {
+                    day: 'numeric',
+                    month: 'numeric',
+                    year: 'numeric'
+                }) + ' ' + new Date(item.date).toLocaleTimeString('en-GB', {
+                    hour: 'numeric',
+                    minute: 'numeric'
+                }),
                 duration: item.duration,
                 activity: item.activity,
                 customer: `${item.customer.firstname} ${item.customer.lastname}`
