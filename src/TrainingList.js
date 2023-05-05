@@ -56,8 +56,8 @@ const TrainingList = () => {
                     <div
                         className="ag-theme-alpine"
                         style={{
-                        height: '500px',
-                        width: '74%'
+                        height: '700px',
+                        width: '76%'
                     }}>
                         <h1>Training</h1>
                         <AgGridReact rowData={trainings} columnDefs={columnDefs}/>

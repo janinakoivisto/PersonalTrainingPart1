@@ -66,8 +66,8 @@ const CustomerList = () => {
                     <div
                         className="ag-theme-alpine"
                         style={{
-                        height: '500px',
-                        width: '74%'
+                        height: '700px',
+                        width: '135%'
                     }}>
                         <h1>Customers</h1>
                         <AgGridReact rowData={customers} columnDefs={columnDefs}/>
