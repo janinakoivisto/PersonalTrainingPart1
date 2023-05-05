@@ -4,11 +4,7 @@ import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 import {Link} from 'react-router-dom';
 import {Box, Button, Container} from '@mui/material';
-import {ListItem} from '@mui/material';
-import {ListItemText} from '@mui/material';
-import {ListItemButton} from '@mui/material';
-import {Toolbar} from '@mui/material';
-import {Typography} from '@mui/material';
+
 
 const CustomerList = () => {
     const [customers,
